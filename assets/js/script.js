@@ -1,4 +1,5 @@
-const copiebutton = document.getElementById("copie-button");
+const copiebutton = document.getElementById("copie-button"); //Initialiser boutton en focus pr EventListener
+//D'ici : insertion des fields dans les variables
 fields1 = document.getElementById("fields1");
 fields2 = document.getElementById("fields2");
 fields3 = document.getElementById("fields3");
@@ -6,6 +7,7 @@ fields4 = document.getElementById("fields4");
 fields5 = document.getElementById("fields-date");
 fields6 = document.getElementById("fields-user");
 
+//fonction qui verifie si les champs sont completes
 copiebutton.addEventListener("click", () => {
   if (fields1.value && fields2.value && fields3.value && fields4.value) {
     navigator.clipboard
@@ -24,7 +26,9 @@ copiebutton.addEventListener("click", () => {
     // fields 5 : ${fields5.value}
     // fields 6 : ${fields6.value}
     // `);
-    var fieldNameElement = document.getElementById('replace');
+    
+    var fieldNameElement = document.getElementById('replace'); //selectionner la cible du remplacement
+    //remplace contenu du div ciblé
     fieldNameElement.innerHTML = `Madame, Monsieur,<br/><br/>
 
     Suite à l'absence de ${fields1.value} ce ${fields5.value}, les élèves du groupe ${fields2.value} pourront sortir à ${fields4.value} le ${fields5.value}.

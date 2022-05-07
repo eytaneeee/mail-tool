@@ -30,26 +30,32 @@
                         <div data-animate="ts-fadeInUp" data-delay=".1s">
                             <p class="w-75 text-white mb-5 ts-opacity__50" id="replace">Cliquez sur copier</p>
                         </div>
-                        <a href="Landing Page.html" class="btn btn-outline-light btn-sm ts-scroll mr-4" data-animate="ts-fadeInUp" data-delay=".2s">
+                        <a href="landing-page.html" class="btn btn-outline-light btn-sm ts-scroll mr-4" data-animate="ts-fadeInUp" data-delay=".2s">
                             Acceuil
                             <i class="fa fa-arrow-right small ml-3 ts-opacity__50"></i>
                         </a>
                     </div>
                     <div class="col-sm-5 offset-lg-1 col-md-4">
-                        <form autocomplete="off" class="ts-form p-4 ts-border-radius__md text-white" data-php-path="assets/php/email.php" data-bg-color="rgba(255,255,255,.2)" data-animate="ts-fadeInUp" data-delay=".2s">
+                        <form autocomplete="false" class="ts-form p-4 ts-border-radius__md text-white" data-php-path="assets/php/email.php" data-bg-color="rgba(255,255,255,.2)" data-animate="ts-fadeInUp" data-delay=".2s">
                             <h3>Concevons</h3>
                             <p class="text-white d-none d-lg-block ts-opacity__50">Selectionner les differentes informations du mail ci-dessous </p>
-
+                            
                             <div class="form-group">
-                                <input autocomplete="false" id="fields1" type="text" class="form-control" id="hero-name" name="name" placeholder="Professeur" required>
+                                <select id="mail-type" class="custom-select form-control">
+                                    <option selected>Type de mail</option>
+                                    <option value="1">Absence</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input autocomplete="off" id="fields1" type="text" class="form-control" id="hero-name" name="name" placeholder="Professeur" required>
                             </div>
                             <!--end form-group -->
                             <div class="form-group">
-                                <input autocomplete="false" id="fields2" type="text" class="form-control" id="hero-email" name="email" placeholder="Groupes concernés" required>
+                                <input autocomplete="off" id="fields2" type="text" class="form-control" id="hero-email" name="email" placeholder="Groupes concernés" required>
                             </div>
                             <!--end form-group -->
                             <div class="form-group">
-                                <input class="form-control" id="fields-date" type="date">
+                                <input class="form-control" id="fields-date" type="date" placeholder="Date">
                             </div>
                             <div class="form-group">
                                 <select id="fields3" class="custom-select form-control">
