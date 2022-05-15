@@ -64,7 +64,7 @@ Référent Vie Scolaire
 Madame, Monsieur,
 <br>
 <br>
-Suite à l'absence de ${prof.value} ce ${date}, les élèves du groupe ${groupe.value} termineront les cours de l'après-midi à ${heure_deb.value} ce ${date}.
+Suite à l'absence de ${prof.value} ce ${date}, les élèves du groupe ${groupe.value} termineront les cours de l'après-midi à ${heure_fin.value} ce ${date}.
 <br>
 <br>
 Vous souhaitant bonne réception,
