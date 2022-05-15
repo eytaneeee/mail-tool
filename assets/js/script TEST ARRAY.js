@@ -13,7 +13,9 @@ cpe = document.getElementById("fields-user");
 copiebutton.addEventListener("click", () => {
     var fieldNameElement = document.getElementById('replace'); 
     date = date.value;
-    date = date.toString().substring(5);
+    date_m = date.toString().substring(5,7);
+    date_d = date.toString().substring(8,10);
+    date = `${date_d}/${date_m}`
     //Tout les types de mails  
     textes = [ ` 
 Madame, Monsieur,
